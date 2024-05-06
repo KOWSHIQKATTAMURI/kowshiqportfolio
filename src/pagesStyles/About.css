@@ -1,0 +1,52 @@
+.aboutHeader
+{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.aboutContent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContent>div
+{
+    width: 50%;
+}
+
+.aboutProfile
+{
+    width: 50%;
+    text-align: center;
+}
+.aboutProfile img
+{
+    width: 50%;
+}
+
+.aboutDetails
+{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.aboutCards
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0rem 0 1rem;
+}
+
+.aboutDescription
+{
+    margin: 1rem 0;
+}
+
+.downloadBtn
+{
+    width: fit-content;
+    padding: 0.85rem 1.85rem;
+}

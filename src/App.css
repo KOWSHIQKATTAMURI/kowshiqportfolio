@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --pri_font: "Space Grotesk", sans-serif;
+  --sec_font: "Montserrat", sans-serif;
+
+  --dark_color: #2c2c2c;
+  --light_dark_color: #3c3c3c;
+  --white_color: #f7f7f7;
+  --grayish_color:#636263;
+  --alter_color:#d57404;
+
+  --large_heading: 2.58rem;
+  --medium_heading: 1.45rem;
+  --para_heading: 1.25rem;
+  --para: 1rem;
+  --tiny_text: 0.85rem;
+
+  --left_right_padding:5rem;
+  --section_padding: 11vw ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.largeHeading
+{
+  font-size: var(--large_heading);
+  font-family: var(--sec_font);
+}
+.mediumHeading
+{
+  font-size: var(--medium_heading);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.paraHeading
+{
+  font-size: var(--para_heading);
+  font-family: var(--pri_font);
+
+}
+.para
+{
+  font-size: var(--para);
+  font-family: var(--pri_font);
+}
+.tinyText
+{
+  font-size: var(--tiny_text);
+  font-family: var(--pri_font);
+}
+.priFont
+{
+  font-family: var(--pri_font);
+}
+.secFont
+{
+  font-family: var(--sec_font);
+}
+
+.svgIcon
+{
+  font-size: 1.5rem;
+  margin:0 0.5rem;
+}
+
+.buttonEle 
+{
+  border: none;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+.buttonWithSvg
+{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.darkBgButton
+{
+  background-color: var(--dark_color);
+  color: var(--white_color);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.commonPadding 
+{
+  padding: 0 var(--left_right_padding);
+}
+.sectionPadding
+{
+  padding: 0 var(--section_padding);
+}
+/* body */
+.app
+{
+  background-color: var(--white_color);
 }
