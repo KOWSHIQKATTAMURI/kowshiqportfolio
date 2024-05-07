@@ -15,6 +15,7 @@
   --white_color: #f7f7f7;
   --grayish_color:#636263;
   --alter_color:#d57404;
+  --box_shadow_color: rgb(105, 105, 105);
 
   --large_heading: 2.58rem;
   --medium_heading: 1.45rem;
@@ -100,4 +101,14 @@
 .app
 {
   background-color: var(--white_color);
+}
+.sectionHeader
+{
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.sectionHeader .mediumHeading
+{
+  text-transform: uppercase;
 }

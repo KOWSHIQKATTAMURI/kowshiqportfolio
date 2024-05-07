@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar';
 import Hero from './pages/Hero';
 import About from './pages/About';
+import Skills from './pages/Skills';
 
 
 
@@ -12,6 +13,7 @@ const App:React.FC = () => {
       <Navbar/>
       <Hero/>
       <About/>
+      <Skills/>
       
     </div>
   )

@@ -4,6 +4,7 @@ import "../pagesStyles/About.css";
 import { IoIosPaper } from "react-icons/io";
 import { SlBadge } from "react-icons/sl";
 import { SiMaterialformkdocs } from "react-icons/si";
+import SectionHeader from "../components/SectionHeader";
 interface AboutCard {
   heading: String;
   answer: String;
@@ -25,10 +26,7 @@ const About: React.FC = () => {
   return (
     <div className="commonPadding">
       <div className="aboutPage sectionPadding">
-        <div className="aboutHeader">
-          <h1 className="mediumHeading">About Me</h1>
-          <p className="para">My Introduction</p>
-        </div>
+        <SectionHeader heading={"About Me"} intro={"My Introduction"} />
         <div className="aboutContent">
           <div className="aboutProfile">
             <img src={profile} alt="profile image" />
