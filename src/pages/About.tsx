@@ -1,27 +1,27 @@
 import profile from "../assets/profile.jpg";
 import Card from "../components/Card";
-import '../pagesStyles/About.css'
+import "../pagesStyles/About.css";
 import { IoIosPaper } from "react-icons/io";
-
-interface AboutCard{
-    heading: String,
-    answer: String
+import { SlBadge } from "react-icons/sl";
+import { SiMaterialformkdocs } from "react-icons/si";
+interface AboutCard {
+  heading: String;
+  answer: String;
+  icon: React.ElementType;
 }
 
-const cardsArr:AboutCard[] = [
-    {
-        heading: 'Experience',
-        answer:'Yet to begin'
-    },
-     {
-        heading: 'Projects',
-        answer:'2+ projects'
-    }
-]
+const q1: AboutCard = {
+  heading: "Experience",
+  answer: "Yet to begin",
+  icon: SlBadge,
+};
+const q2: AboutCard = {
+  heading: "Projects",
+  answer: "2+ projects",
+  icon: SiMaterialformkdocs,
+};
 
-
-
-const About:React.FC = () => {
+const About: React.FC = () => {
   return (
     <div className="commonPadding">
       <div className="aboutPage sectionPadding">
@@ -36,19 +36,24 @@ const About:React.FC = () => {
 
           <div className="aboutDetails">
             <div className="aboutCards">
-                {
-                    cardsArr.map((item, idx) => {
-                        console.log(item)
-                        return(
-                           <Card data={item}/>
-                        )
-                    })
-                }
+              <Card heading={q1.heading} answer={q1.answer} icon={q1.icon} />
+              <Card heading={q2.heading} answer={q2.answer} icon={q2.icon} />
             </div>
 
-            <p className="para aboutDescription">MERN stack developer with a passion for building websites and applications with UI/UX. You can see what I am up to on my GitHub.</p>
+            <p className="para aboutDescription">
+              I visited all of the coding websites and improved my DSA skills. I
+              am starting a new chapter in which I will use my logic and
+              problem-solving skills, as well as my creativity, to develop
+              websites with the boss in town, MERN Stack.
+            </p>
 
-            <a href="#" download={true} className="buttonWithSvg buttonEle priFont darkBgButton downloadBtn">Download Resume <IoIosPaper className="svgIcon"/> </a>
+            <a
+              href="#"
+              download={true}
+              className="buttonWithSvg buttonEle priFont darkBgButton downloadBtn"
+            >
+              Download Resume <IoIosPaper className="svgIcon" />{" "}
+            </a>
           </div>
         </div>
       </div>

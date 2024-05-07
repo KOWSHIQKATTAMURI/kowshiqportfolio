@@ -1,16 +1,18 @@
 import '../componentsStyles/Card.css'
 interface CardProps{
-    cardItem:Object
+    heading:String,
+    answer:String,
+    icon: React.ElementType
 }
 
-const Card:React.FC<{props:CardProps}> = (props) => {
-    console.log(props )
+const Card:React.FC<CardProps> = (props) => {
+    
     return(
         <div className="cardContainer">
             <div className="cardOverlay"></div>
-            
-            <p className="para">Experience</p>
-            <p className="tinyText">Yet to begin</p>
+            <props.icon className='svgIcon'/>
+            <p className="para">{props.heading}</p>
+            <p className="tinyText">{props.answer}</p>
         </div>
     )
 }
