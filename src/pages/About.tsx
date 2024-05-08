@@ -24,8 +24,8 @@ const q2: AboutCard = {
 
 const About: React.FC = () => {
   return (
-    <div className="commonPadding">
-      <div className="aboutPage sectionPadding">
+    <div className="commonPadding fullPage">
+      <div className="aboutPage  sectionPadding">
         <SectionHeader heading={"About Me"} intro={"My Introduction"} />
         <div className="aboutContent">
           <div className="aboutProfile">

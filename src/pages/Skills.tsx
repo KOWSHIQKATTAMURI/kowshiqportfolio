@@ -1,9 +1,13 @@
 import SectionHeader from '../components/SectionHeader'
 import SkillsShowCase from '../components/SkillsShowCase';
 import '../pagesStyles/Skills.css'
-import { DiHtml5,DiCss3,DiJsBadge,DiReact,DiMysql,DiMongodb } from "react-icons/di";
+import { DiJavascript1,DiReact,DiMysql,DiMongodb } from "react-icons/di";
 import { FaGithub, FaNodeJs,FaAws } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { AiOutlineCode,AiOutlineHtml5 } from "react-icons/ai";
+import { HiOutlineUserGroup } from "react-icons/hi2";
+import { TbBrandCss3 } from "react-icons/tb";
 
 export interface SkillTypes{
     icon: React.ElementType,
@@ -13,17 +17,17 @@ export interface SkillTypes{
 
 const frontendSkills: SkillTypes[] = [
     {
-        icon: DiHtml5,
+        icon: AiOutlineHtml5,
         sName: "HTML",
         sLevel: "Intermediate"
     },
       {
-        icon: DiCss3,
+        icon: TbBrandCss3,
         sName: "CSS",
         sLevel: "Intermediate"
     },
       {
-        icon: DiJsBadge,
+        icon: DiJavascript1,
         sName: "JS",
         sLevel: "Intermediate"
     },
@@ -69,31 +73,26 @@ const backendSkills: SkillTypes[] = [
 
 const otherSkills: SkillTypes[] = [
     {
-        icon: DiHtml5,
-        sName: "HTML",
+        icon: AiOutlineCode,
+        sName: "DSA",
         sLevel: "Intermediate"
     },
       {
-        icon: DiHtml5,
-        sName: "HTML",
+        icon: FaChalkboardTeacher,
+        sName: "Teaching",
         sLevel: "Intermediate"
     },
       {
-        icon: DiHtml5,
-        sName: "HTML",
+        icon: HiOutlineUserGroup,
+        sName: "Community Management and Admin",
         sLevel: "Intermediate"
-    },
-      {
-        icon: DiHtml5,
-        sName: "HTML",
-        sLevel: "Intermediate"
-    },
+    }
 ]
 
 const Skills:React.FC = () => {
     return(
-        <div className='commonPadding'>
-            <div className="skillsPage">
+        <div className='commonPadding fullPage'>
+            <div className="skillsPage ">
                 <SectionHeader heading={"Skills"} intro={"My Technical Skills"} />
                 <div className="skillsContents">
                     <SkillsShowCase data={frontendSkills} skillHeading={"Fontend Skills"} />
