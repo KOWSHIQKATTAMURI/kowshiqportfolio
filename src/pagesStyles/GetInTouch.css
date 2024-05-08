@@ -1,10 +1,12 @@
-
+.gitContainer
+{
+    padding: 4rem 0;
+}
 .gitInsider
 {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-
 }
 
 .gitInsider .paraHeading
