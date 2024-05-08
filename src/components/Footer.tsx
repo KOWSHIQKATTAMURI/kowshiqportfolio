@@ -8,7 +8,7 @@ const Footer:React.FC = () => {
     return(
         <div className="footerpage">
             <div className="footerContent">
-                <p className='largeHeading'>Kattamuri Kowshiq</p>
+                <p className='mediumHeading'>Kattamuri Kowshiq.</p>
                 <div className="footerSocialMedia">
                         <a href="https://github.com/KOWSHIQKATTAMURI"  target='_blank' rel="noreferrer"  className='darkBgButton'>
                             <FaGithub className="svgIcon" />

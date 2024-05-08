@@ -18,7 +18,7 @@
   --box_shadow_color: rgb(105, 105, 105);
 
   --large_heading: 2.58rem;
-  --medium_heading: 1.45rem;
+  --medium_heading: 1.55rem;
   --para_heading: 1.25rem;
   --para: 1rem;
   --tiny_text: 0.75rem;
@@ -97,6 +97,8 @@
 {
   padding: 0 var(--section_padding);
 }
+
+
 /* body */
 .app
 {

@@ -12,11 +12,14 @@
     align-items: center;
     flex-direction: column;
 }
+.footerContent .mediumHeading
+{
+    font-weight: 500;
+}
 .footerSocialMedia
 {
     display: flex;
     margin: 0.85rem 0;
-
 }
 .footerSocialMedia a 
 {

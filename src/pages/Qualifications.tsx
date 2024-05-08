@@ -19,11 +19,11 @@ const Qualification: React.FC = () => {
         />
 
         <div className="qheaderLinks paraHeading">
-          <p onClick={() => setShowEdu(false)} className={showEdu ? "" : "activeQuali"} >
+          <p onClick={() => setShowEdu(false)} className={showEdu ? "qhlPara" : "qhlPara activeQuali"} >
           
             <SiDarkreader className="svgIcon" /> Education
           </p>
-          <p onClick={() => setShowEdu(true)} className={showEdu ? "activeQuali" : ""}  >
+          <p onClick={() => setShowEdu(true)} className={showEdu ? "qhlPara activeQuali" : "qhlPara"}  >
             
             <GrTechnology className="svgIcon" /> Experience
           </p>

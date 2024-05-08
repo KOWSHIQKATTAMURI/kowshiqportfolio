@@ -9,11 +9,13 @@
 }
 .timeLineInnerDiv
 {
+    justify-content:start;
     flex-direction: column;
     padding: 5vh 1.5rem;
+    min-height: 400px;
 }
 
-.qheaderLinks p
+.qheaderLinks .qhlPara
 {
     font-weight: 600;
     margin: 0 1.25rem;
@@ -36,6 +38,7 @@
 {
     display: grid;
     grid-template-columns: 1fr 50px 1fr;
+    
 }
 
 .timeLineComponent
