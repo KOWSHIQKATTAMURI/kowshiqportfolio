@@ -6,6 +6,7 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Qualification from './pages/Qualifications';
 import GetInTouch from './pages/GetInTouch';
+import Footer from './components/Footer';
 
 
 
@@ -18,6 +19,7 @@ const App:React.FC = () => {
       <Skills/>
       <Qualification/>
       <GetInTouch/>
+      <Footer/>
       
     </div>
   )

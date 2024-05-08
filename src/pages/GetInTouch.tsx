@@ -1,6 +1,6 @@
 import Card from "../components/Card"
 import SectionHeader from "../components/SectionHeader"
-import { MdOutlineAttachEmail } from "react-icons/md";
+import { MdOutlineAttachEmail,MdOutlineWhatsapp } from "react-icons/md";
 import '../pagesStyles/GetInTouch.css'
 import { GrSend } from "react-icons/gr";
 import { BiMessageSquareDetail } from "react-icons/bi";
@@ -18,7 +18,7 @@ const GetInTouch:React.FC = () => {
                         <Card heading={"Email"} answer={"Kattamurikowshiq@gmail.com"} icon={MdOutlineAttachEmail} exist={true} />
                     </a>
                     <a href="#" className="ttmBox">
-                        <Card heading={"WhatsApp"} answer={"Kattamurikowshiq@gmail.com"} icon={MdOutlineAttachEmail} exist={true} />
+                        <Card heading={"WhatsApp"} answer={"+91 70361-6XXXX"} icon={MdOutlineWhatsapp} exist={true} />
                     </a>
                     <a href="#" className="ttmBox">
                         <Card heading={"Telegram"} answer={"https://t.me/Kkbhai1589"} icon={GrSend} exist={true} />
