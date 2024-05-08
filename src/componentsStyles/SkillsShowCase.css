@@ -33,3 +33,10 @@
 {
     font-weight: 500;
 }
+
+@media screen and (max-width:769px) {
+    .skillSetContainer
+    {
+        max-width: 400px;
+    }
+}

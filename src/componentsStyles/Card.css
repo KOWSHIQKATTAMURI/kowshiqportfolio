@@ -1,41 +1,45 @@
-.cardContainer
-{
-    position: relative;
-    padding: 1.5rem 3.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 1px black;
-    text-align: center;
-    transition: all 0.25s ease;
-    cursor: pointer;
+.cardContainer {
+  position: relative;
+  padding: 1.5rem 3.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1px black;
+  text-align: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
 }
 
-
-.cardContainer:hover
-{
-    background-color: rgb(130, 130, 130);
+.cardContainer:hover {
+  background-color: rgb(130, 130, 130);
 }
-.cardContainer .para
-{
-    margin: 0.05rem 0;
+.cardContainer .para {
+  margin: 0.05rem 0;
 }
 
-.cardContainer .arrowPara
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.25rem;
+.cardContainer .arrowPara {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.25rem;
 }
-.cardContainer .arrowPara svg
-{
-    margin-left: 0.25rem;
-    transition: all 0.25s ease;
+.cardContainer .arrowPara svg {
+  margin-left: 0.25rem;
+  transition: all 0.25s ease;
 }
-.cardContainer:hover .arrowPara svg
-{
-    transform: translateX(10px);
+.cardContainer:hover .arrowPara svg {
+  transform: translateX(10px);
 }
-.cardContainer:hover .highLight 
-{
-    color: white;
+.cardContainer:hover .highLight {
+  color: white;
 }
+
+@media screen and (max-width: 1025px) {
+  .cardContainer {
+    padding: 1.3rem 2.5rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .cardContainer {
+    padding: 1.13rem 2rem;
+  }
+}
+

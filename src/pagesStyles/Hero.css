@@ -1,83 +1,90 @@
-
-.heroPage
-{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    position: relative;
+.heroPage {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
 }
 
-.heroDetails
-{
-    max-width: 50%;
+.heroDetails {
+  max-width: 50%;
 }
 
-.aboutInShort
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+.aboutInShort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.horizontalLine
-{
-    width: 25%;
-    height: 2px;
-    background-color: var(--alter_color);
-
+.horizontalLine {
+  width: 25%;
+  height: 2px;
+  background-color: var(--alter_color);
 }
-.aboutInShort .paraHeading
-{
-    font-weight: 600;
-    color: var(--light_dark_color);
-    margin: 0.15rem 0;
+.aboutInShort .paraHeading {
+  font-weight: 600;
+  color: var(--light_dark_color);
+  margin: 0.15rem 0;
 }
-.heroDescription
-{
-    margin: 0 0 1.25rem;
-    color: var(--grayish_color);
+.heroDescription {
+  margin: 0 0 1.25rem;
+  color: var(--grayish_color);
 }
 
-.sayHelloBtn
-{
-    width:fit-content;
-    padding: 0.85rem 2.15rem;
+.sayHelloBtn {
+  width: fit-content;
+  padding: 0.85rem 2.15rem;
 }
 
-.heroProfile
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.heroProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.imageOuterDiv
-{
-    width: 50%;
+.imageOuterDiv {
+  width: 50%;
+  overflow: hidden;
+}
+
+.imageOuterDiv img {
+  width: 100%;
+}
+
+.socialMediaHandlers {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: -40px;
+}
+.socialMediaHandlers a {
+  padding: 0.15rem;
+  color: inherit;
+  margin: 0.35rem 0;
+}
+.socialMediaHandlers a .svgIcon {
+  font-size: 1.15rem;
+}
+
+
+@media screen and (max-width: 1025px) {
+  .horizontalLine {
+  width: 10%;
+  }
+  .imageOuterDiv {
+    width: 70%;
     overflow: hidden;
+  }
+}
+@media screen and (max-width: 769px) {
+  .horizontalLine {
+  width: 10%;
+  }
+  .heroPage
+  {
+    height: 100%;
+    padding: 25vh 0 18vh;
+  }
 }
 
-.imageOuterDiv img
-{
-    width: 100%;
-}
 
-.socialMediaHandlers
-{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: -50px;
-}
-.socialMediaHandlers a 
-{
-    padding: 0.15rem;
-    color: inherit;
-    margin: 0.35rem 0;
-}
-.socialMediaHandlers a .svgIcon
-{
-    font-size: 1.15rem;
-}
