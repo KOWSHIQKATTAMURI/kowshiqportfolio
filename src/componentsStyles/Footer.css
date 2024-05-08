@@ -1,8 +1,41 @@
 
+.footerpage
+{
+    height: 35vh;
+    padding: 2rem;
+    box-shadow: 0 0 1px var(--box_shadow_color);
+}
+.footerContent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footerSocialMedia
+{
+    display: flex;
+    margin: 0.85rem 0;
 
-
-
+}
 .footerSocialMedia a 
 {
+    --size: 40px;
     background-color: var();
+    border-radius: 0.25rem;
+    display: inline-block;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 0.55rem ;
+}
+
+.ccText
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
 }
