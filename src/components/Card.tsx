@@ -1,8 +1,10 @@
 import '../componentsStyles/Card.css'
+import { GoArrowRight } from "react-icons/go";
 interface CardProps{
     heading:String,
     answer:String,
-    icon: React.ElementType
+    icon: React.ElementType,
+    exist?:Boolean
 }
 
 const Card:React.FC<CardProps> = (props) => {
@@ -12,7 +14,14 @@ const Card:React.FC<CardProps> = (props) => {
             <div className="cardOverlay"></div>
             <props.icon className='svgIcon'/>
             <p className="para">{props.heading}</p>
-            <p className="tinyText">{props.answer}</p>
+            <p className="highLight tinyText">{props.answer}</p>
+            {
+                props.exist && (
+                    <p className='arrowPara tinyText'>
+                        Write Me <GoArrowRight/>
+                    </p>
+                )
+            }
         </div>
     )
 }

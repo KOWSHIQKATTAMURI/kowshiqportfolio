@@ -1,10 +1,8 @@
 
-
 interface HeaderProps{
     heading: String,
     intro: String
 }
-
 
 const SectionHeader:React.FC<HeaderProps>  = ({heading, intro}) => {
     return(

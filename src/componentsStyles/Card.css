@@ -6,6 +6,7 @@
     box-shadow: 0 0 1px black;
     text-align: center;
     transition: all 0.25s ease;
+    cursor: pointer;
 }
 
 
@@ -17,7 +18,24 @@
 {
     margin: 0.05rem 0;
 }
-.cardContainer:hover .tinyText 
+
+.cardContainer .arrowPara
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+.cardContainer .arrowPara svg
+{
+    margin-left: 0.25rem;
+    transition: all 0.25s ease;
+}
+.cardContainer:hover .arrowPara svg
+{
+    transform: translateX(10px);
+}
+.cardContainer:hover .highLight 
 {
     color: white;
 }

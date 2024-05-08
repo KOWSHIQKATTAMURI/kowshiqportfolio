@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Hero from './pages/Hero';
 import About from './pages/About';
 import Skills from './pages/Skills';
+import Qualification from './pages/Qualifications';
+import GetInTouch from './pages/GetInTouch';
 
 
 
@@ -14,6 +16,8 @@ const App:React.FC = () => {
       <Hero/>
       <About/>
       <Skills/>
+      <Qualification/>
+      <GetInTouch/>
       
     </div>
   )
