@@ -17,6 +17,11 @@ const Hero:React.FC = () => {
                 <p className="para heroDescription">
                     Aspiring tech enthusiast trapper in a biotechnologist body. Author of "100 Wizard Problems of Mathematics" and a self-proclaimed math magician. My love for math and computer science is irrational, though my degree suggests otherwise. I engoy the logic in life's algorithms and beauty in elegant code. A paradoxical mind with a penchant for the peculiar. 
                 </p>
+                <div className='socialMediaHandlers mobileSMHandlers'>
+                <a href="#" target='_blank' rel='noreferrer'><FaLinkedinIn className='svgIcon'/></a>
+                <a href="#" target='_blank' rel='noreferrer'><FaYoutube className='svgIcon'/></a>
+                <a href="#" target='_blank' rel='noreferrer'><AiOutlineUsergroupAdd className='svgIcon'/></a>
+            </div>
                 <a href="https://t.me/Kkbhai1589" target="_blank" rel="noreferrer" className='buttonWithSvg buttonEle priFont darkBgButton sayHelloBtn'>Say Hello <LiaTelegram className='svgIcon' /></a>
 
             </div>
@@ -27,7 +32,7 @@ const Hero:React.FC = () => {
             </div>
 
 
-            <div className='socialMediaHandlers'>
+            <div className='socialMediaHandlers largeScreenSMHandlers'>
                 <a href="#" target='_blank' rel='noreferrer'><FaLinkedinIn className='svgIcon'/></a>
                 <a href="#" target='_blank' rel='noreferrer'><FaYoutube className='svgIcon'/></a>
                 <a href="#" target='_blank' rel='noreferrer'><AiOutlineUsergroupAdd className='svgIcon'/></a>

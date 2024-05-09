@@ -1,42 +1,44 @@
-
-.sscOuterContainer
-{
-    padding: 2.8rem 3.4rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 1px var(--box_shadow_color);
-    color: var(--dark_color);
-    margin: 1rem;
+.sscOuterContainer {
+  padding: 2.8rem 3.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1px var(--box_shadow_color);
+  color: var(--dark_color);
+  margin: 1rem;
 }
-.sscOuterContainer .paraHeading
-{
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--light_dark_color);
-    margin: 0.85rem 0;
-    text-align: center;
+.sscOuterContainer .paraHeading {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--light_dark_color);
+  margin: 0.85rem 0;
+  text-align: center;
 }
 
-.skillSetContainer
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.skillSetContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.sscBox
-{
-    display: flex;
-    align-items: start;
+.sscBox {
+  display: flex;
+  align-items: start;
+  padding: 1rem;
+}
+
+.sscDetails .para {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 769px) {
+  .skillSetContainer {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .skillSetContainer {
+    max-width: 100%;
+  }
+
+  .sscOuterContainer {
     padding: 1rem;
-}
-
-.sscDetails .para
-{
-    font-weight: 500;
-}
-
-@media screen and (max-width:769px) {
-    .skillSetContainer
-    {
-        max-width: 400px;
-    }
+  }
 }

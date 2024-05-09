@@ -66,10 +66,13 @@
   font-size: 1.15rem;
 }
 
+.mobileSMHandlers {
+  display: none;
+}
 
 @media screen and (max-width: 1025px) {
   .horizontalLine {
-  width: 10%;
+    width: 10%;
   }
   .imageOuterDiv {
     width: 70%;
@@ -78,14 +81,34 @@
 }
 @media screen and (max-width: 769px) {
   .horizontalLine {
-  width: 10%;
+    width: 10%;
   }
-  .heroPage
-  {
+  .heroPage {
     height: 100%;
     padding: 25vh 0 18vh;
   }
+  .mobileSMHandlers {
+    display: block;
+    position: static;
+    margin: 0.25rem 0;
+  }
+  .largeScreenSMHandlers
+  {
+    display: none;
+  }
 }
 
-
-
+@media screen and (max-width: 426px) {
+  .horizontalLine {
+    width: 10%;
+  }
+  .heroPage {
+    height: 100%;
+    padding: 12vh 0 8vh;
+    flex-direction: column;
+  }
+  .heroDetails {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}

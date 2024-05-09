@@ -1,102 +1,106 @@
-
-
-
-.qheaderLinks, .timeLineInnerDiv,.lineOuterDiv
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.qheaderLinks,
+.timeLineInnerDiv,
+.lineOuterDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.timeLineInnerDiv
-{
-    justify-content:start;
-    flex-direction: column;
-    padding: 5vh 1.5rem;
-    min-height: 400px;
+.timeLineInnerDiv {
+  justify-content: start;
+  flex-direction: column;
+  padding: 5vh 1.5rem;
+  min-height: 400px;
 }
 
-.qheaderLinks .qhlPara
-{
-    font-weight: 600;
-    margin: 0 1.25rem;
-    display: flex;
-    padding: 0.25rem 1rem;
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--sec_font);
-    cursor: pointer;
-    color: var(--grayish_color);
+.qheaderLinks .qhlPara {
+  font-weight: 600;
+  margin: 0 1.25rem;
+  display: flex;
+  padding: 0.25rem 1rem;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--sec_font);
+  cursor: pointer;
+  color: var(--grayish_color);
 }
 
-.activeQuali 
-{
-    color: red;
+.timeLineGrid {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
 }
 
-.timeLineGrid
-{
+.timeLineComponent {
+  text-align: right;
+  padding: 0rem 2rem 2rem;
+  min-width: 320px;
+  max-width: 350px;
+}
+.timeLineComponent .mainHeadingtlc {
+  font-family: var(--sec_font);
+  font-weight: 600;
+}
+.dataTime {
+  margin: 0.5rem 0 0;
+  display: flex;
+  align-items: center;
+}
+.dataTime svg {
+  margin-right: 0.55rem;
+}
+.one .dataTime {
+  justify-content: end;
+}
+
+.two {
+  text-align: left;
+}
+.two .dataTime {
+  justify-content: start;
+}
+
+.line {
+  width: 2px;
+  background-color: var(--grayish_color);
+  height: 100%;
+  position: relative;
+}
+
+.line .circle {
+  --size: 15px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: var(--grayish_color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-45%, -50%);
+}
+
+.activeQuali {
+  color: var(--dark_color);
+}
+
+@media screen and (max-width: 426px) {
+  .qheaderLinks .qhlPara {
+    margin:0rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .timeLineInnerDiv {
+    padding: 5vh 0;
+  }
+  .timeLineGrid {
     display: grid;
-    grid-template-columns: 1fr 50px 1fr;
-    
-}
-
-.timeLineComponent
-{
+    grid-template-columns: 1fr 10px 1fr;
+  }
+  .timeLineComponent {
     text-align: right;
-    padding: 0rem 2rem 2rem;
-    min-width: 320px;
-    max-width: 350px;
-
-}
-.timeLineComponent .mainHeadingtlc
-{
-    font-family: var(--sec_font);
-    font-weight: 600;
-}
-.dataTime
-{
-    margin: 0.5rem 0 0;
-    display: flex;
-    align-items: center;
-}
-.dataTime svg
-{
-    margin-right: .55rem;
-}
-.one .dataTime
-{
-    justify-content: end;
-}
-
-.two
-{
+    padding: 0rem 1rem 2rem;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .two {
     text-align: left;
+  }
 }
-.two .dataTime
-{
-    justify-content: start;
-}
-
-
-.line
-{
-    width: 2px;
-    background-color: var(--grayish_color);
-    height: 100%;
-    position: relative;
-}
-
-.line .circle
-{
-    --size: 15px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    background-color: var(--grayish_color);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-45%,-50%);
-}
-

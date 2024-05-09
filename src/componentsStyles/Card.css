@@ -43,3 +43,8 @@
   }
 }
 
+@media screen and (max-width: 426px) {
+  .cardContainer {
+    padding: 1.3rem 2.5rem;
+  }
+}

@@ -40,7 +40,7 @@ const GetInTouch:React.FC = () => {
                         <div className="inputBox">
                             <label htmlFor="Query" className="tinyText">Query</label>
                             <textarea id="Query" 
-                            rows={6} placeholder="Enter your Name" className="para" />
+                            rows={6} placeholder="Enter your Query" className="para" />
                         </div>
 
                         <div className="buttonBoxForm">

@@ -45,3 +45,23 @@
     padding: 1rem;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .aboutContent
+  {
+    flex-direction: column;
+  }
+  .aboutContent > div {
+  width: 100%;
+}
+.aboutProfile
+{
+  display: none;
+}
+  .aboutProfile img {
+    width: 70%;
+  }
+  .aboutDetails {
+    padding: 1rem;
+  }
+}

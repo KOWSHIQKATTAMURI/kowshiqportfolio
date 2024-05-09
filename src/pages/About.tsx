@@ -5,6 +5,8 @@ import { IoIosPaper } from "react-icons/io";
 import { SlBadge } from "react-icons/sl";
 import { SiMaterialformkdocs } from "react-icons/si";
 import SectionHeader from "../components/SectionHeader";
+
+
 interface AboutCard {
   heading: String;
   answer: String;
@@ -46,11 +48,11 @@ const About: React.FC = () => {
             </p>
 
             <a
-              href="#"
+              href='/gallery/Kowshiq_Kattamuri_Resume.pdf'
               download={true}
               className="buttonWithSvg buttonEle priFont darkBgButton downloadBtn"
             >
-              Download Resume <IoIosPaper className="svgIcon" />{" "}
+              Download Resume <IoIosPaper className="svgIcon" />
             </a>
           </div>
         </div>

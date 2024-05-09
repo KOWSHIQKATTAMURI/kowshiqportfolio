@@ -71,19 +71,20 @@
     margin: 3px 0 0;
     z-index: 1000;
     transition: all 0.25s ease;
+    border-radius: 0.15rem;
   }
   .activeHamburgerLines .secondHamLine{
     opacity: 0;
   }
   .activeHamburgerLines .firstHamLine
   {
-    transform: rotate(45deg) translateY(8px);
-    transform-origin: center;
+    transform: rotate(45deg);
+    transform-origin: top left;
   }
   .activeHamburgerLines .thirdHamLine
   {
-    transform: rotate(-45deg) translateY(-8px);
-    transform-origin: center;
+    transform: rotate(-45deg) translate(-5px, 2px);
+    transform-origin: top left;
   }
   .mobileMode {
     flex-direction: column;

@@ -13,11 +13,11 @@ const Navbar:React.FC = ()=> {
                 <div className='hamLine thirdHamLine'></div>
             </div>
             <ul className={openHam ? "navLinks priFont mobileMode" : "navLinks priFont mobileMode openNavLinks"}>
-                <li className='activeLink'><a href="#about">Home</a></li>
+                <li className='activeLink'><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#about">Skills</a></li>
-                <li><a href="#about">Portfolio</a></li>
-                <li><a href="#about">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="https://www.amazon.in/Wizard-Problems-Mathematics-Kowshiq-Kattamuri/dp/9390447712" target='_blank'>My Book</a></li>
             </ul>
         </div>
@@ -25,4 +25,5 @@ const Navbar:React.FC = ()=> {
     )
 }
 
-export default Navbar 
+
+export default Navbar
