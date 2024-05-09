@@ -121,7 +121,7 @@
 }
 @media screen and (max-width: 769px) {
   :root {
-    --large_heading: 1.75rem;
+    --large_heading: 1.65rem;
     --medium_heading: 1.314rem;
     --para_heading: 1.08rem;
     --para: 0.95rem;

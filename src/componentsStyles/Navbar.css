@@ -38,6 +38,9 @@
   color: var(--alter_color);
 }
 
+.hamburgerMenu {
+  display: none;
+}
 @media screen and (max-width: 1025px) {
   .header {
     display: flex;
@@ -50,5 +53,62 @@
     display: flex;
     padding: 1rem 2rem;
     width: 100vw;
+    position: fixed;
+  }
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+  }
+  .hamburgerMenu .hamLine {
+    --wsize: 25px;
+    --hsize: 3px;
+    width: var(--wsize);
+    height: var(--hsize);
+    background-color: var(--grayish_color);
+    margin: 3px 0 0;
+    z-index: 1000;
+    transition: all 0.25s ease;
+  }
+  .activeHamburgerLines .secondHamLine{
+    opacity: 0;
+  }
+  .activeHamburgerLines .firstHamLine
+  {
+    transform: rotate(45deg) translateY(8px);
+    transform-origin: center;
+  }
+  .activeHamburgerLines .thirdHamLine
+  {
+    transform: rotate(-45deg) translateY(-8px);
+    transform-origin: center;
+  }
+  .mobileMode {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: var(--dark_color);
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    color: var(--white_color);
+    font-size: var(--medium_heading);
+    transition: all 0.25s ease;
+  }
+  .openNavLinks {
+    left: 0%;
+  }
+  .mobileMode li {
+    width: 100%;
+    text-align: center;
+  }
+  .mobileMode li a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid var(--grayish_color);
   }
 }
