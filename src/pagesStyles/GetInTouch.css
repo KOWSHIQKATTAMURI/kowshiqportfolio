@@ -69,6 +69,12 @@
 .buttonBoxForm {
   display: flex;
   justify-content: end;
+  
+}
+.buttonBoxForm button:hover
+{
+  cursor: pointer;
+  background-color: var(--light_dark_color);
 }
 
 @media screen and (max-width: 769px) {
