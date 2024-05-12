@@ -26,13 +26,13 @@ const Hero: React.FC = () => {
             penchant for the peculiar.
           </p>
           <div className="socialMediaHandlers mobileSMHandlers">
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/kattamurikowshiq" target="_blank" rel="noreferrer">
               <FaLinkedinIn className="svgIcon" />
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="https://youtube.com/@KattamuriKowshiq" target="_blank" rel="noreferrer">
               <FaYoutube className="svgIcon" />
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="https://whatsapp.com/channel/0029VaITGBX3AzNRgmw8YF3T" target="_blank" rel="noreferrer">
               <AiOutlineUsergroupAdd className="svgIcon" />
             </a>
           </div>
@@ -52,13 +52,13 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="socialMediaHandlers largeScreenSMHandlers">
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/kattamurikowshiq" target="_blank" rel="noreferrer">
             <FaLinkedinIn className="svgIcon" />
           </a>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://youtube.com/@KattamuriKowshiq" target="_blank" rel="noreferrer">
             <FaYoutube className="svgIcon" />
           </a>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://whatsapp.com/channel/0029VaITGBX3AzNRgmw8YF3T" target="_blank" rel="noreferrer">
             <AiOutlineUsergroupAdd className="svgIcon" />
           </a>
         </div>
