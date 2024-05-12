@@ -40,7 +40,7 @@ const GetInTouch:React.FC = () => {
     }
 
     return(
-       <div className="commonPadding ">
+       <div className="commonPadding" id="contact">
          <div className="gitContainer sectionPadding">
             <SectionHeader heading={"Get In Touch"} intro={"Contact Me"} />
 

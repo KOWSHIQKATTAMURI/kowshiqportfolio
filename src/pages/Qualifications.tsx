@@ -7,7 +7,7 @@ import { BsCalendarDate } from "react-icons/bs";
 import { useState } from "react";
 
 const Qualification: React.FC = () => {
-  const [showEdu, setShowEdu] = useState(false);
+  const [showEdu, setShowEdu] = useState<Boolean>(true);
 
   return (
     <div className="commonPadding">
@@ -19,14 +19,14 @@ const Qualification: React.FC = () => {
 
         <div className="qheaderLinks paraHeading">
           <p
+          className={showEdu ? "qhlPara paraHeading" : "qhlPara activeQuali paraHeading"}
             onClick={() => setShowEdu(false)}
-            className={showEdu ? "qhlPara" : "qhlPara activeQuali"}
           >
             <SiDarkreader className="svgIcon" /> Education
           </p>
           <p
+          className={showEdu ? "qhlPara activeQuali paraHeading" : "qhlPara paraHeading"}
             onClick={() => setShowEdu(true)}
-            className={showEdu ? "qhlPara activeQuali" : "qhlPara"}
           >
             <GrTechnology className="svgIcon" /> Experience
           </p>

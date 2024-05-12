@@ -154,3 +154,16 @@
     margin: 0 0.35rem;
   }
 }
+
+@media screen and (max-width: 376px) {
+  :root {
+    --large_heading: 1.65rem;
+    --medium_heading: 1.15rem;
+    --para_heading: 1rem;
+    --para: 0.89rem;
+    --tiny_text: 0.75rem;
+  }
+  .svgIcon {
+    font-size: 1.15rem;
+  }
+}

@@ -37,6 +37,9 @@
 .activeLink {
   color: var(--alter_color);
 }
+.navLinks li a.active{
+    color: var(--alter_color);
+}
 
 .hamburgerMenu {
   display: none;

@@ -1,3 +1,21 @@
+
+.blodDivPostion
+{
+  position: relative;
+}
+.blobDiv
+{
+  position: absolute;
+  display: none;
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  bottom: 0;
+  right: -0;
+  border-radius:70% 50% 20% 70% / 60% 40% 60% 50%; ;
+  background-color: #d57304de;
+  box-shadow: -0px -0px 0 10px #d5730470,  -0 -0 0 20px #d573044e;
+}
 .heroPage {
   display: flex;
   align-items: center;
@@ -44,11 +62,29 @@
 .imageOuterDiv {
   width: 50%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation: blobAnimate 5s ease-in-out infinite;
+  box-shadow: 0 3px 5px black; */
+}
+
+@keyframes blobAnimate {
+  0%, 100%{
+    border-radius: 20% 40% 10% 30% ;
+  }
+  50%{
+    border-radius: 30% 20% 20% 15% ;
+  }
 }
 
 .imageOuterDiv img {
-  width: 100%;
+  width: 120%;
+  object-position: center;
 }
+
+
+
 
 .socialMediaHandlers {
   position: absolute;

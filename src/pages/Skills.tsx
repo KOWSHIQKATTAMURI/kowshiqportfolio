@@ -91,7 +91,7 @@ const otherSkills: SkillTypes[] = [
 
 const Skills:React.FC = () => {
     return(
-        <div className='commonPadding fullPage'>
+        <div className='commonPadding fullPage' id='skills'>
             <div className="skillsPage ">
                 <SectionHeader heading={"Skills"} intro={"My Technical Skills"} />
                 <div className="skillsContents">
