@@ -141,7 +141,7 @@
   }
   .heroPage {
     height: 100%;
-    padding: 10vh 0 8vh;
+    padding: 10vh 0 8vh ;
     flex-direction: column;
   }
   .heroDetails {
