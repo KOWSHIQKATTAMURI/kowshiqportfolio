@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
           <div className="aboutInShort">
             <div className="horizontalLine"></div>
             <p className="paraHeading">
-              Autor, Coder, Mathematician, Biologist
+              Author, Coder, Mathematician, Biologist
             </p>
           </div>
           <p className="para heroDescription">

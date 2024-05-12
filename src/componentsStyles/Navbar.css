@@ -6,6 +6,7 @@
   left: 0;
   background-color: var(--white_color);
   z-index: 1000;
+  font-family: var(--pri_font);
 }
 .navbar {
   display: flex;
@@ -17,6 +18,7 @@
 .navbar .logo {
   color: var(--alter_color);
   display: inline;
+  opacity: 0;
 }
 .navLinks {
   display: flex;
@@ -26,7 +28,9 @@
 }
 .navLinks li {
   margin: 0 0.15rem;
-  font-weight: 600;
+  font-weight: 400;
+    font-family: var(--pri_font);
+
   text-transform: capitalize;
 }
 .navLinks li a {

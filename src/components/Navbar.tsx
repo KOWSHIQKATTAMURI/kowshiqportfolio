@@ -1,12 +1,24 @@
-import { useState, useRef, ReactHTMLElement } from "react";
+import { useState, useRef, ReactHTMLElement, useEffect, MouseEvent } from "react";
 import "../componentsStyles/Navbar.css";
 import { HashLink as Link } from "react-router-hash-link";
 
-
-
 const Navbar: React.FC = () => {
   const [openHam, setOpenHam] = useState<Boolean>(false);
-  const [activeLink, setActiveLink] = useState<Boolean>(false)
+  const [activeLink, setActiveLink] = useState<Boolean>(false);
+
+  useEffect(() => {
+   const closerHandler = (e:any) => {
+      setOpenHam(false)
+   }
+
+   document.addEventListener('mousedown', closerHandler);
+
+   return () => {
+    document.removeEventListener('mousedown', closerHandler);
+   }
+
+  })
+
   return (
     <div className="header">
       <div className="navbar">
@@ -27,48 +39,29 @@ const Navbar: React.FC = () => {
               ? "navLinks priFont mobileMode openNavLinks"
               : "navLinks priFont mobileMode"
           }
-
         >
           <li>
-            <Link
-              to="#home" smooth
-            >
+            <Link to="#home" smooth>
               Home
             </Link>
           </li>
           <li>
-            <Link
-              to="#about"
-              smooth
-              
-            >
+            <Link to="#about" smooth>
               About
             </Link>
           </li>
           <li>
-            <Link
-              to="#skills"
-              smooth
-              
-            >
+            <Link to="#skills" smooth>
               Skills
             </Link>
           </li>
           <li>
-            <Link
-              to="#project"
-              smooth
-              
-            >
+            <Link to="#project" smooth>
               Projects
             </Link>
           </li>
           <li>
-            <Link
-              to="#contact"
-              smooth
-              
-            >
+            <Link to="#contact" smooth>
               Contact
             </Link>
           </li>
