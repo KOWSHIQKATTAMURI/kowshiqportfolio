@@ -75,24 +75,21 @@ const otherSkills: SkillTypes[] = [
     {
         icon: AiOutlineCode,
         sName: "DSA",
-        sLevel: "Intermediate"
     },
       {
         icon: FaChalkboardTeacher,
         sName: "Teaching",
-        sLevel: "Intermediate"
     },
       {
         icon: HiOutlineUserGroup,
         sName: "Community Management and Admin",
-        sLevel: "Intermediate"
     }
 ]
 
 const Skills:React.FC = () => {
     return(
         <div className='commonPadding fullPage' id='skills'>
-            <div className="skillsPage ">
+            <div className="skillsPage sectionPadding">
                 <SectionHeader heading={"Skills"} intro={"My Technical Skills"} />
                 <div className="skillsContents">
                     <SkillsShowCase data={frontendSkills} skillHeading={"Fontend Skills"} />

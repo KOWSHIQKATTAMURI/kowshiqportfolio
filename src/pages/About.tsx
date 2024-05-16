@@ -1,4 +1,4 @@
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile1.png";
 import Card from "../components/Card";
 import "../pagesStyles/About.css";
 import { IoIosPaper } from "react-icons/io";

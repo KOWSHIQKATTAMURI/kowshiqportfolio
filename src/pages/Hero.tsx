@@ -1,4 +1,4 @@
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile1.png";
 import { LiaTelegram } from "react-icons/lia";
 import { FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
