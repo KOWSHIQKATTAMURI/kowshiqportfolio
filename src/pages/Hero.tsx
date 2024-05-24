@@ -14,16 +14,11 @@ const Hero: React.FC = () => {
           <div className="aboutInShort">
             <div className="horizontalLine"></div>
             <p className="paraHeading">
-              Author, Coder, Mathematician, Biologist
+              Author and a Mathematician
             </p>
           </div>
           <p className="para heroDescription">
-            Aspiring tech enthusiast trapper in a biotechnologist body. Author
-            of "100 Wizard Problems of Mathematics" and a self-proclaimed math
-            magician. My love for math and computer science is irrational,
-            though my degree suggests otherwise. I engoy the logic in life's
-            algorithms and beauty in elegant code. A paradoxical mind with a
-            penchant for the peculiar.
+            I am Kattamuri Kowshiq, a 2024 graduate from NIT Calicut who loves mathematics more than anything else. I am also the published author of the book "100 Wizard Problems of Mathematics" and a maths tutor for many students. I also upload advanced-level mathematics problems along with their video solutions to my YouTube channel, which currently has more than 2,000 subscribers. I have vast experience teaching mathematics to students at both the national and international levels.
           </p>
           <div className="socialMediaHandlers mobileSMHandlers">
             <a href="https://www.linkedin.com/in/kattamurikowshiq" target="_blank" rel="noreferrer">

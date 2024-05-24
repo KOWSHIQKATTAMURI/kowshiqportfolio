@@ -59,7 +59,7 @@ const GetInTouch:React.FC = () => {
                 </div>
 
                 <div className="writeMessageContainer">
-                    <p className="paraHeading">Write me your project/queries</p>
+                    <p className="paraHeading">Write me your concerns/queries</p>
 
                     <form action="" className="form" ref={formRef}>
                         <div className="inputBox">

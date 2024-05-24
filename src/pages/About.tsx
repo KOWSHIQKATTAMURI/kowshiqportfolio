@@ -1,11 +1,11 @@
 import profile from "../assets/profile1.png";
-import Card from "../components/Card";
+// import Card from "../components/Card";
 import "../pagesStyles/About.css";
-import { IoIosPaper } from "react-icons/io";
-import { SlBadge } from "react-icons/sl";
-import { SiMaterialformkdocs } from "react-icons/si";
+// import { IoIosPaper } from "react-icons/io";
+// import { SlBadge } from "react-icons/sl";
+// import { SiMaterialformkdocs } from "react-icons/si";
 import SectionHeader from "../components/SectionHeader";
-
+import ExpoCard, { ExpoCardProps } from "../components/ExpoCard";
 
 interface AboutCard {
   heading: String;
@@ -13,22 +13,46 @@ interface AboutCard {
   icon: React.ElementType;
 }
 
-const q1: AboutCard = {
-  heading: "Experience",
-  answer: "Yet to begin",
-  icon: SlBadge,
-};
-const q2: AboutCard = {
-  heading: "Projects",
-  answer: "2+ projects",
-  icon: SiMaterialformkdocs,
-};
+
+
+const expoCards: ExpoCardProps[] = [
+  {
+    companyName: "Kunduz",
+    logo: "/gallery/experience/kunduz.jpeg",
+    tenure: "June 2021- Aug 2021",
+    role:"Mathematics Subject Expert"
+  },
+   {
+    companyName: "Paathshala Ascension",
+    logo: "/gallery/experience/pathashala.png",
+    tenure: "Sep 2021- Oct 2021",
+    role:"JEE Mathematics Teacher"
+  },
+   {
+    companyName: "CUET BABA",
+    logo: "/gallery/experience/cuetbaba.png",
+    tenure: "December 2023- April 2024",
+    role:"Aptitude & Reasoning Teacher"
+  }
+
+];
+
+// const q1: AboutCard = {
+//   heading: "Experience",
+//   answer: "Yet to begin",
+//   icon: SlBadge,
+// };
+// const q2: AboutCard = {
+//   heading: "Projects",
+//   answer: "2+ projects",
+//   icon: SiMaterialformkdocs,
+// };
 
 const About: React.FC = () => {
   return (
-    <div className="commonPadding fullPage" id="about">
+    <div className="commonPadding fullPage" id="experience">
       <div className="aboutPage  sectionPadding">
-        <SectionHeader heading={"About Me"} intro={"My Introduction"} />
+        <SectionHeader heading={"Experience"} intro={""} />
         <div className="aboutContent">
           <div className="aboutProfile">
             <img src={profile} alt="profile image" />
@@ -36,24 +60,15 @@ const About: React.FC = () => {
 
           <div className="aboutDetails">
             <div className="aboutCards">
-              <Card heading={q1.heading} answer={q1.answer} icon={q1.icon} />
-              <Card heading={q2.heading} answer={q2.answer} icon={q2.icon} />
+              {
+                expoCards.map((card, index) => (
+                  <ExpoCard key={index} {...card} />
+                ))
+              }
+              
             </div>
 
-            <p className="para aboutDescription">
-              I visited all of the coding websites and improved my DSA skills. I
-              am starting a new chapter in which I will use my logic and
-              problem-solving skills, as well as my creativity, to develop
-              websites with the boss in town, MERN Stack.
-            </p>
-
-            <a
-              href='/gallery/Kowshiq_Kattamuri_Resume.pdf'
-              download={true}
-              className="buttonWithSvg buttonEle priFont darkBgButton downloadBtn"
-            >
-              Download Resume <IoIosPaper className="svgIcon" />
-            </a>
+            
           </div>
         </div>
       </div>
@@ -62,3 +77,5 @@ const About: React.FC = () => {
 };
 
 export default About;
+
+

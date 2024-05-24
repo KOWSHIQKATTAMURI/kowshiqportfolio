@@ -1,0 +1,48 @@
+/* Expo Card Styles */
+.expo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 1px black;
+  margin: 0.5rem ;
+  transition: all 0.25s ease;
+}
+
+.expo-card img {
+  --size: 50px;
+  width: var(--size);
+  height: var(--size);
+  object-fit: cover;
+  /* border-radius: 50%; */
+  /* margin-bottom: 20px; */
+}
+
+.expo-card .paraHeading {
+  font-weight: 600;
+}
+
+.expo-card  .para
+{
+    margin: 0.25rem 0;
+}
+.expo-card .tenure {
+  font-style: italic;
+}
+
+.expo-card:hover {
+  background-color: rgb(168, 168, 168);
+}
+
+.expo-card:hover img
+{
+    filter: saturate(0.25) blur(2px);
+}
+
+.expo-card:hover .highLightText {
+  color: white;
+}

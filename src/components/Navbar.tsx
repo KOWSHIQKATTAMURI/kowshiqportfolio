@@ -46,18 +46,18 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="#about" smooth>
-              About
+            <Link to="#experience" smooth>
+              Experience
             </Link>
           </li>
           <li>
-            <Link to="#skills" smooth>
-              Skills
+            <Link to="#tutorials" smooth>
+              Tutorials
             </Link>
           </li>
           <li>
-            <Link to="#project" smooth>
-              Projects
+            <Link to="#testimonals" smooth>
+              Testimonals
             </Link>
           </li>
           <li>
