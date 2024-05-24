@@ -7,6 +7,7 @@ import Skills from './pages/Skills';
 import Qualification from './pages/Qualifications';
 import GetInTouch from './pages/GetInTouch';
 import Footer from './components/Footer';
+import TestimonalPage from './pages/TestimonalsPage';
 
 
 
@@ -16,7 +17,8 @@ const App:React.FC = () => {
       <Navbar/>
       <Hero/>
       <About/>
-      <Skills/>
+      {/* <Skills/> */}
+      <TestimonalPage/>
       <Qualification/>
       <GetInTouch/>
       <Footer/>

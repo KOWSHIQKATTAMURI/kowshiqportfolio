@@ -1,0 +1,30 @@
+/* Set up the container */
+
+.testimonial_container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Create a wrapper for the testimonials */
+.testimonials_wrapper {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    border: 2px solid red;
+}
+
+/* Define the animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause the animation on hover */
+.testimonial_container:hover .testimonials_wrapper {
+    animation-play-state: paused;
+}
+

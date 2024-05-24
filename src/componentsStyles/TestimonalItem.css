@@ -1,0 +1,30 @@
+.testimonalComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-width: 350px;
+}
+
+.testimonalComponent .review {
+    font-weight: 600;
+}
+
+.testimonial-person {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.person-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.person-designation {
+    font-size: 14px;
+    color: #888;
+}
