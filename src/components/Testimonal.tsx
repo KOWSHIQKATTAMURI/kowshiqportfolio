@@ -16,8 +16,8 @@ const Testimonial: React.FC<TestimonialProps> = ({
         <div className='testimonalComponent'>
             <p className='para review'>{review}</p>
             <div className='reviewPerson '>
-                <p className='tinyText'>{personDesignation}</p>
-            <p className='para'>{personName}, </p>
+                <p className='tinyText personDesignation'>-{personDesignation}</p>
+            <p className='para personName'>{personName}</p>
             </div>
         </div>
     );

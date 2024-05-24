@@ -3,8 +3,8 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './pages/Hero';
 import About from './pages/About';
-import Skills from './pages/Skills';
-import Qualification from './pages/Qualifications';
+// import Skills from './pages/Skills';
+// import Qualification from './pages/Qualifications';
 import GetInTouch from './pages/GetInTouch';
 import Footer from './components/Footer';
 import TestimonalPage from './pages/TestimonalsPage';
@@ -19,7 +19,7 @@ const App:React.FC = () => {
       <About/>
       {/* <Skills/> */}
       <TestimonalPage/>
-      <Qualification/>
+      {/* <Qualification/> */}
       <GetInTouch/>
       <Footer/>
       

@@ -23,12 +23,14 @@
 }
 
 .expo-card .paraHeading {
-  font-weight: 600;
+  font-weight: 500;
+  margin: 0.25rem 0;
+  color: var(--dark_color);
 }
 
 .expo-card  .para
 {
-    margin: 0.25rem 0;
+    margin: 0.05rem 0 0;
 }
 .expo-card .tenure {
   font-style: italic;
