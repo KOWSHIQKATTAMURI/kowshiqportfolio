@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px; /* Adjust the height as needed */
+    min-height: 250px; /* Adjust the height as needed */
     border: 1px solid #ccc;
     padding: 1rem 2rem;
     min-width: 500px;
@@ -37,4 +37,30 @@
 .personDesignation {
     font-style: italic;
     color: #888;
+}
+
+
+@media screen and (max-width: 580px) {
+    .testimonalComponent {
+        min-height: 300px;
+        min-width: 450px;
+    }
+    
+}
+
+@media screen and (max-width: 445px) {
+    .testimonalComponent {
+        min-height: 310px;
+        min-width: 95vw;
+    }
+    
+}
+
+
+@media screen and (max-width: 350px) {
+    .testimonalComponent {
+        min-height: 310px;
+        min-width: 100vw;
+    }
+    
 }
