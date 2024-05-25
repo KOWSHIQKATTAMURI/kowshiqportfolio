@@ -1,3 +1,8 @@
+#experience
+{
+  padding: 5vh 0;
+}
+
 .aboutContent {
   display: flex;
   justify-content: center;
@@ -37,14 +42,18 @@
 
 @media screen and (max-width: 1025px) {
   .aboutProfile img {
-    width: 70%;
+    width: 100%;
   }
   .aboutDetails {
     padding: 1rem;
   }
+  .aboutProfile
+  {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 450px) {
   .aboutContent
   {
     flex-direction: column;
@@ -52,14 +61,16 @@
   .aboutContent > div {
   width: 100%;
 }
-.aboutProfile
-{
-  display: none;
-}
-  .aboutProfile img {
-    width: 70%;
-  }
+ 
   .aboutDetails {
     padding: 1rem;
   }
+  .aboutCards {
+
+  height: 100%;
+  display: grid ;
+  grid-template-columns: repeat(1, 1fr);
+
 }
+}
+

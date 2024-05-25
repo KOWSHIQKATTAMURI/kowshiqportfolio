@@ -38,13 +38,32 @@
 
 .expo-card:hover {
   background-color: rgb(168, 168, 168);
+  color: rgb(198, 198, 198);
 }
 
-.expo-card:hover img
-{
+
+.expo-card:hover img, .expo-card:hover .tenure, .expo-card:hover .paraHeading{
+
     filter: saturate(0.25) blur(2px);
 }
 
 .expo-card:hover .highLightText {
   color: white;
+}
+
+
+@media screen and (max-width:602px) {
+  .expo-card{
+    min-width: 200px;
+  }
+}
+
+
+@media screen and (max-width: 449px) {
+  .expo-card
+  {
+
+    min-width: 100%;
+  }
+  
 }

@@ -62,7 +62,7 @@ const testimonials: TestimonialProps[] = [
 
 const TestimonalPage: React.FC = () => {
   return (
-    <div className="testimonalPageContainer" id="testimonials">
+    <div className="testimonalPageContainer" id="testimonals">
       <SectionHeader heading={"Testimonials"} intro={""} />
       <div className="testimonial_container">
         <div className="testimonials_wrapper">

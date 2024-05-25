@@ -4,7 +4,6 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar: React.FC = () => {
   const [openHam, setOpenHam] = useState<Boolean>(false);
-  const [activeLink, setActiveLink] = useState<Boolean>(false);
 
   useEffect(() => {
    const closerHandler = (e:any) => {

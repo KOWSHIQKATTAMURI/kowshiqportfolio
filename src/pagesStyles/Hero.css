@@ -144,6 +144,26 @@
   }
 }
 
+@media screen and (max-width: 645px){
+  .heroPage
+  {
+    flex-direction: column;    
+  }
+  .horizontalLine
+  {
+    width: 20%;
+  }
+  .heroDetails {
+    width: 100%;
+    padding: 0vh 5vw;
+  }
+  .heroProfile
+  {
+    margin-top: 2rem;
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .horizontalLine {
     width: 10%;

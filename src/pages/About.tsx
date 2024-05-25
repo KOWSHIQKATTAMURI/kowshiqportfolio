@@ -33,6 +33,12 @@ const expoCards: ExpoCardProps[] = [
     logo: "/gallery/experience/cuetbaba.png",
     tenure: "December 2023- April 2024",
     role:"Aptitude & Reasoning Teacher"
+  },
+   {
+    companyName: "CCD NITC",
+    logo: "/gallery/experience/ccd.png",
+    tenure: "Aug 2023 - May 2024",
+    role:"Placement Coordinator"
   }
 
 ];

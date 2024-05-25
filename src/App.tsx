@@ -8,6 +8,7 @@ import About from './pages/About';
 import GetInTouch from './pages/GetInTouch';
 import Footer from './components/Footer';
 import TestimonalPage from './pages/TestimonalsPage';
+import Youtube from './pages/Youtube';
 
 
 
@@ -18,6 +19,7 @@ const App:React.FC = () => {
       <Hero/>
       <About/>
       {/* <Skills/> */}
+      <Youtube/>
       <TestimonalPage/>
       {/* <Qualification/> */}
       <GetInTouch/>
