@@ -1,8 +1,14 @@
+.youtubePage
+{
+  padding: 5vh 0;
+}
+
 .youtubeOuterWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 
 .youtubeWrapper {

@@ -1,4 +1,8 @@
 /* Set up the container */
+.testimonalPageContainer
+{
+  padding: 5vh 0;
+}
 
 .testimonial_container {
   width: 100%;

@@ -60,7 +60,7 @@ const Youtube: React.FC = () => {
     };
 
   return (
-    <div className="youtubePage">
+    <div className="youtubePage" id="tutorials">
       <SectionHeader heading={"Tutorals"} intro={""} />
 
       <div className="youtubeOuterWrapper ">
