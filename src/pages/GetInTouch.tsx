@@ -7,6 +7,7 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import dotenv from 'dotenv'
+import { error } from "console";
 
 
 const GetInTouch:React.FC = () => {
@@ -58,16 +59,17 @@ const GetInTouch:React.FC = () => {
         if (currentForm == null || currentForm === undefined) {
             return
         };
-        setErrorMsg('')
-//service_tx0don8
+        //service_tx0don8
         emailjs.sendForm("service_d4wi107", "template_xge5djo", currentForm, {
-        publicKey: process.env.REACT_APP_PUBLIC_KEY,
-      }).then(
-        () => {
+            publicKey: process.env.REACT_APP_PUBLIC_KEY,
+        }).then(
+            () => {
+            setErrorMsg('')
           setFormStatus(true);
           setFormStatusMsg('Sent Successfully');
           setTimeout(() => {
                 setFormStatusMsg('Send Message');
+                setFormStatus(false)
           }, 3000)
 
         },
@@ -122,10 +124,25 @@ const GetInTouch:React.FC = () => {
                             }} />
                         </div>
                         {
-                            errorMsg && <p className="errorMsg tinyText" style={{color:'red'}} >{errorMsg}</p>
+                            errorMsg ? <p className="errorMsg tinyText" style={{color:'red', opacity:1}} >{errorMsg}</p>
+                            : <p style={{opacity: 0}}>{errorMsg}</p>
+                            
                         }
                         <div className="buttonBoxForm">
-                            <button className="buttonWithSvg buttonEle priFont darkBgButton sayHelloBtn" onClick={sendEmailFunc}>{formStatusMsg}<BiMessageSquareDetail className="svgIcon"/> </button>
+                            <button className={`buttonWithSvg buttonEle priFont darkBgButton sayHelloBtn` } 
+
+                            style={ formStatus ? {
+                                backgroundColor: 'green',
+                            } : {}}
+                            
+                            
+                            onClick={sendEmailFunc}>{formStatusMsg} {formStatus ? 
+                            (
+                                <BiMessageSquareDetail style={{marginLeft:'10px'}} />
+                            ) : (
+                                <GrSend style={{marginLeft:'10px'}} />
+                            )   
+                        }</button>
                         </div>
                     </form>
                 </div>
