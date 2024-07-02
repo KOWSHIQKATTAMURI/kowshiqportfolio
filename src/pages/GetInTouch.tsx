@@ -6,23 +6,62 @@ import { GrSend } from "react-icons/gr";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
+import dotenv from 'dotenv'
 
 
 const GetInTouch:React.FC = () => {
     const [formStatus, setFormStatus] = useState<Boolean>(false)
+    interface FormData {
+        from_name: string;
+        from_email: string;
+        message: string;
+    }
+    
+    const [formData, setFormData] = useState<FormData>({
+        from_name: '',
+        from_email: '',
+        message: ''
+    })
+    const [errorMsg, setErrorMsg] = useState<String>('')
     const [formStatusMsg, setFormStatusMsg] = useState<String>('Send Message');
     const formRef = useRef<HTMLFormElement>(null)
 
+    const onChangeHandler = (e:React.ChangeEvent<HTMLInputElement>) => {
+        
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+            
+        })
+    }
+
     const sendEmailFunc = (e:React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
+
+
+        
         const currentForm = formRef.current;
         // this prevents sending emails if there is no form.
         // in case currentForm cannot possibly ever be null,
         // you could alert the user or throw an Error, here
-        if (currentForm == null) return;
+        console.log(formData)
+        
+        if(formData.from_name == '' || formData.from_email == '' || formData.message == '') {
+            setErrorMsg('*Please fill in all the fields')
+            return
+        }
+        if(!formData.from_email.includes('@')){
+            setErrorMsg('*Please enter a valid email')
+            return
+        }
 
-        emailjs.sendForm('service_d4wi107', 'template_xge5djo', currentForm, {
-        publicKey: 'IlKeLPTkvF_MI80sU',
+        if (currentForm == null || currentForm === undefined) {
+            return
+        };
+        setErrorMsg('')
+//service_tx0don8
+        emailjs.sendForm("service_d4wi107", "template_xge5djo", currentForm, {
+        publicKey: process.env.REACT_APP_PUBLIC_KEY,
       }).then(
         () => {
           setFormStatus(true);
@@ -64,18 +103,27 @@ const GetInTouch:React.FC = () => {
                     <form action="" className="form" ref={formRef}>
                         <div className="inputBox">
                             <label htmlFor="name" className="tinyText">Name</label>
-                            <input id="name" type="text" placeholder="Enter your Name" className="para"name="from_name" />
+                            <input id="name" type="text" placeholder="Enter your Name" className="para"name="from_name" onChange={onChangeHandler} />
                         </div>
                         <div className="inputBox">
                             <label htmlFor="Email" className="tinyText">E-Mail</label>
-                            <input id="Email" type="text" placeholder="Enter your Email" className="para" name="from_email" />
+                            <input id="Email" type="text" placeholder="Enter your Email" className="para" name="from_email" onChange={onChangeHandler} />
                         </div>
                         <div className="inputBox">
                             <label htmlFor="Query" className="tinyText">Query</label>
                             <textarea id="Query"  name="message"
-                            rows={6} placeholder="Enter your Query" className="para" />
-                        </div>
+                            rows={6} placeholder="Enter your Query" className="para" onChange={(e:React.ChangeEvent<HTMLTextAreaElement>) => {
 
+                                setFormData({
+                                    ...formData,
+                                    [e.target.name]: e.target.value
+                                
+                                })
+                            }} />
+                        </div>
+                        {
+                            errorMsg && <p className="errorMsg tinyText" style={{color:'red'}} >{errorMsg}</p>
+                        }
                         <div className="buttonBoxForm">
                             <button className="buttonWithSvg buttonEle priFont darkBgButton sayHelloBtn" onClick={sendEmailFunc}>{formStatusMsg}<BiMessageSquareDetail className="svgIcon"/> </button>
                         </div>
